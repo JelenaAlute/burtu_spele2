@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burtu spēle</title>
+</head>
+<body>
+    <a href="spele2.html">Noteikumi</a> 
+    <button onclick="Rezultati()">Rezultāti</button>
+    <button onclick="Par_autoru()">Par autoru</button>
+
+    <p >
+
+    </p>
+    <div class="skaits">Burtu skaits</div>
+    <input class="atbilde_1"/>
+    <button onclick="parbaudit_1()">Pārbaudīt atbildi</button>
+  
+    <script>
+
+let vardi_1   = ['4']
+    function parbaudit_1()
+    {
+      let atbilde_1 = document.querySelector('.atbilde_1').value
+   if( atbilde_1 == vardi_1[0])
+      {
+       
+         alert ('pareizi! Nospiež Četri burti')  
+        
+            
+       
+      }//beidzas if alert <a href="spele.html"> spele</a>
+      else
+       {
+         alert('Nepareizi!')
+       }//beidzas else
+
+    }//beidzas parbaudit_1()
+
+
+
+
+</script>
+<ul>
+    <li>
+        <a href="spele.html">
+        Četri burti
+    </a>
+    </li>
+</ui> 
+ 
+
+
+</body>
+</html>

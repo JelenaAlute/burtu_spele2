@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desmit burti</title>
+</head>
+<body>
+  
+  <div class="sajaukts_10">Šeit būs sajauktais vārds</div>
+    <input class="atbilde_10"/>
+    <button onclick="parbaudit_10()">Pārbaudīt atbildi</button>
+
+  <script>
+
+  let vardi_10   = ['kartupelis', 'lakstīgala', 'varavīksne',  'basketbols',  'rakstnieks', 'Lieldienas',  'strēlnieks',  'valodnieks']
+  let vardi_10_s = ['eartispkul', 'taaaksīgll', 'vevanrakīs',  'askolsetbb',  'kskstnirae', 'asieielLdn',  'tēlierkssn',  'dviaonekls']
+
+  let randomNr = Math.random() * 10
+
+  randomNr = Math.ceil( randomNr )
+  randomNr = randomNr-1
+
+  document.querySelector(".sajaukts_10").innerHTML=vardi_10_s[randomNr]
+  
+  function parbaudit_10()
+  {
+    let atbilde = document.querySelector('.atbilde_10').value
+    
+    if( atbilde == vardi_10[randomNr])
+       {
+         alert('Pareizi!')
+       }//beidzas if
+       else
+       {
+         alert('Nepareizi!')
+       }//beidzas else
+
+  }//beidzas parbaudit()
+
+  </script>
+
+
+</body>
+</html>

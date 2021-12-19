@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Četri burti</title>
+</head>
+<body>
+  
+  <div class="sajaukts_4">Šeit būs sajauktais vārds</div>
+    <input class="atbilde_4"/>
+    <button onclick="parbaudit_4()">Pārbaudīt atbildi</button>
+
+  <script>
+
+  let vardi_4   = ['koks','kāja', 'labs','lini', 'logs', 'daba', 'dēls', 'egle', 'ezis', 'gads' ]
+  let vardi_4_s = ['sokk','āakj', 'bsla','nlii', 'gosl', 'abda', 'ēlds', 'gele','zsie', 'agsd']
+
+  let randomNr = Math.random() * 10
+
+  randomNr = Math.ceil( randomNr )
+  randomNr = randomNr-1
+
+  document.querySelector(".sajaukts_4").innerHTML=vardi_4_s[randomNr]
+  function parbaudit_4()
+  {
+    let atbilde_4 = document.querySelector('.atbilde_4').value
+    
+    if( atbilde_4 == vardi_4[randomNr])
+       {
+         alert('Pareizi!')
+       }//beidzas if
+       else
+       {
+         alert('Nepareizi!')
+       }//beidzas else
+
+  }//beidzas parbaudit()
+
+  </script>
+
+
+</body>
+</html>
