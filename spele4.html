@@ -7,31 +7,69 @@
     <title>Burtu spēle</title>
 </head>
 <body>
-    <a href="spele2.html">Noteikumi</a> 
-    <button onclick="Rezultati()">Rezultāti</button>
+    <a href="spele2.html"><h4>Noteikumi</h4></a> <a href="rezultati.html"><h4>Rezultāti</h4></a>
+    
     <button onclick="Par_autoru()">Par autoru</button>
 
     <p >
 
     </p>
-    <div class="skaits">Burtu skaits</div>
+    <div class="skaits">Ievadiet burtu skaitu</div>
     <input class="atbilde_1"/>
     <button onclick="parbaudit_1()">Pārbaudīt atbildi</button>
   
     <script>
 
 let vardi_1   = ['4']
+let vardi_5   = ['5']
+let vardi_6   = ['6']
+let vardi_7   = ['7']
+let vardi_8   = ['8']
+let vardi_9   = ['9']
+let vardi_10   = ['10']
     function parbaudit_1()
     {
       let atbilde_1 = document.querySelector('.atbilde_1').value
    if( atbilde_1 == vardi_1[0])
       {
        
-         alert ('pareizi! Nospiež Četri burti')  
+         alert ('Pareizi! Nospiež Četri burti')  
+        
+                   
+      }//beidzas if 1 alert <a href="spele.html"> spele</a>
+      else if( atbilde_1 == vardi_5[0])
+      {
+       
+         alert ('Pareizi! Nospiež pieci burti') 
+         }//beidzas if 5
+         else if( atbilde_1 == vardi_6[0])
+      {
+       
+         alert ('Pareizi! Nospiež Seši burti') 
+          }//beidzas if 6
+         else if( atbilde_1 == vardi_7[0])
+      {
+       
+         alert ('Pareizi! Nospiež Septiņi burti')
+          }//beidzas if 7
+          else if( atbilde_1 == vardi_8[0])
+      {
+       
+         alert ('Pareizi! Nospiež Astoņi burti')
+          }//beidzas if 8
+          else if( atbilde_1 == vardi_9[0])
+      {
+       
+         alert ('Pareizi! Nospiež Deviņi burti')
+          }//beidzas if 9
+         else if( atbilde_1 == vardi_10[0])
+      {
+       
+         alert ('Pareizi! Nospiež Desmit burti')  
         
             
        
-      }//beidzas if alert <a href="spele.html"> spele</a>
+      }//beidzas if 
       else
        {
          alert('Nepareizi!')
@@ -47,6 +85,35 @@ let vardi_1   = ['4']
     <li>
         <a href="spele.html">
         Četri burti
+    </a>
+    </li>
+    <li>
+        <a href="spele5.html">
+        Pieci burti
+    </a>
+    </li><li>
+        <a href="spele6.html">
+        Seši burti
+    </a>
+    </li>
+    <li>
+        <a href="spele7.html">
+        Septiņi burti
+    </a>
+    </li>
+    <li>
+        <a href="spele8.html">
+        Astoņi burti
+    </a>
+    </li>
+    <li>
+        <a href="spele9.html">
+        Deviņi burti
+    </a>
+    </li>
+    <li>
+        <a href="spele3.html">
+        Desmit burti
     </a>
     </li>
 </ui> 
